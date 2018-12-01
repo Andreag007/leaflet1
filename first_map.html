@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Malls</title>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Exo" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<h1>Shopping Malls in Bogota, Colombia</h1>
+
+
+  <div id="mapid"></div>
+
+
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+
+  <script>
+
+  let map = L.map('mapid').setView([4.624, -74.066], 10.98);
+
+  let marker1 = L.marker([4.647459, -74.101314]).addTo(map)
+    .bindPopup('Centro Comercial Gran Estación');
+  let marker2 = L.marker([4.653331, -74.109727]).addTo(map)
+    .bindPopup('Centro Comercial Salitre Plaza');
+  let marker3 = L.marker([4.664022, -74.130720]).addTo(map)
+      .bindPopup('Hayuelos Centro Comercial');
+  let marker4 = L.marker([4.618355, -74.085788]).addTo(map)
+          .bindPopup('Calima Centro Comercial bogota');
+
+  L.tileLayer('https://api.mapbox.com/styles/v1/andreag007/cjp0gdm1g03s22ro77343r2pw/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYW5kcmVhZzAwNyIsImEiOiJjanAwZzZpemcwajZ2M2tvNWZveWYxbnV4In0.ijJuwTAWgqPMedERiq0dbg', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18
+  }).addTo(map);
+
+
+
+  </script>
+
+<p>My name is Andrea Giraldo and here is a map of Bogota, Colombia. In this map, I show markers where shopping malls are located.</p>
+
+
+</body>
+
+</html>

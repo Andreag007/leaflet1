@@ -1,0 +1,25 @@
+#mapid {
+  height: 400px;
+  width: 50%;
+  margin-top: 3rem;
+  border: 1px solid #000;
+  margin: auto;
+}
+
+h1 {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  color: #fff;
+}
+
+p {
+  padding-left: 2rem;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+}
